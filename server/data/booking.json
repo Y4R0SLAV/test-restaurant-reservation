@@ -1,0 +1,733 @@
+{
+  "available_days": [
+    "2026-05-21",
+    "2026-05-22",
+    "2026-05-23",
+    "2026-05-24",
+    "2026-05-25"
+  ],
+  "current_day": "2026-05-23",
+  "restaurant": {
+    "id": 1,
+    "restaurant_name": "Bistro Nova",
+    "opening_time": "11:00",
+    "closing_time": "23:00",
+    "timezone": "Europe/Moscow"
+  },
+  "tables": [
+    {
+      "id": "08b35b68-08b3-48b3-ab35b-08b35b6808b3",
+      "number": "1",
+      "capacity": 2,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "a708a7ae-a708-4708-a08a7-a708a7aea708",
+          "status": "Closed",
+          "start_time": "2026-05-22T21:56:00+03:00",
+          "end_time": "2026-05-22T23:31:00+03:00"
+        },
+        {
+          "id": "1fe68e72-1fe6-4fe6-ae68e-1fe68e721fe6",
+          "status": "Closed",
+          "start_time": "2026-05-23T14:32:00+03:00",
+          "end_time": "2026-05-23T16:07:00+03:00"
+        },
+        {
+          "id": "035e2982-035e-435e-a5e29-035e2982035e",
+          "status": "Closed",
+          "start_time": "2026-05-24T15:16:00+03:00",
+          "end_time": "2026-05-24T16:51:00+03:00"
+        },
+        {
+          "id": "7c3c1046-7c3c-4c3c-a3c10-7c3c10467c3c",
+          "status": "Closed",
+          "start_time": "2026-05-25T19:52:00+03:00",
+          "end_time": "2026-05-25T21:27:00+03:00"
+        }
+      ],
+      "reservations": []
+    },
+    {
+      "id": "a6ead519-a6ea-46ea-aead5-a6ead519a6ea",
+      "number": "2",
+      "capacity": 4,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "9e3779b1-9e37-4e37-a3779-9e3779b19e37",
+          "status": "Bill",
+          "start_time": "2026-05-21T14:07:00+03:00",
+          "end_time": "2026-05-21T15:17:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 100,
+          "name_for_reservation": "Иван П.",
+          "num_people": 3,
+          "phone_number": "+7 911 100-10-20",
+          "status": "Новая",
+          "seating_time": "2026-05-22T17:00:00+03:00",
+          "end_time": "2026-05-22T18:30:00+03:00"
+        },
+        {
+          "id": 101,
+          "name_for_reservation": "Ольга С.",
+          "num_people": 4,
+          "phone_number": "+7 911 101-11-21",
+          "status": "Заявка",
+          "seating_time": "2026-05-22T18:15:00+03:00",
+          "end_time": "2026-05-22T20:15:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "45224eca-4522-4522-a224e-45224eca4522",
+      "number": "3",
+      "capacity": 4,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "4540215f-4540-4540-a4021-4540215f4540",
+          "status": "Banquet",
+          "start_time": "2026-05-22T15:16:00+03:00",
+          "end_time": "2026-05-22T17:16:00+03:00"
+        },
+        {
+          "id": "be1e0823-be1e-4e1e-a1e08-be1e0823be1e",
+          "status": "Banquet",
+          "start_time": "2026-05-23T19:52:00+03:00",
+          "end_time": "2026-05-23T21:52:00+03:00"
+        },
+        {
+          "id": "a195a333-a195-4195-a95a3-a195a333a195",
+          "status": "Banquet",
+          "start_time": "2026-05-24T20:36:00+03:00",
+          "end_time": "2026-05-24T22:36:00+03:00"
+        },
+        {
+          "id": "1a7389f7-1a73-4a73-a7389-1a7389f71a73",
+          "status": "Banquet",
+          "start_time": "2026-05-25T13:12:00+03:00",
+          "end_time": "2026-05-25T15:12:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 102,
+          "name_for_reservation": "Ольга П.",
+          "num_people": 4,
+          "phone_number": "+7 912 100-10-20",
+          "status": "Заявка",
+          "seating_time": "2026-05-23T17:00:00+03:00",
+          "end_time": "2026-05-23T18:30:00+03:00"
+        },
+        {
+          "id": 103,
+          "name_for_reservation": "Дмитрий С.",
+          "num_people": 4,
+          "phone_number": "+7 912 101-12-21",
+          "status": "Открыт",
+          "seating_time": "2026-05-23T18:15:00+03:00",
+          "end_time": "2026-05-23T20:15:00+03:00"
+        },
+        {
+          "id": 104,
+          "name_for_reservation": "Елена К.",
+          "num_people": 2,
+          "phone_number": "+7 912 102-14-22",
+          "status": "Закрыт",
+          "seating_time": "2026-05-23T19:30:00+03:00",
+          "end_time": "2026-05-23T22:00:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "e359c87b-e359-4359-a59c8-e359c87be359",
+      "number": "4",
+      "capacity": 2,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "3c6ef362-3c6e-4c6e-a6ef3-3c6ef3623c6e",
+          "status": "Closed",
+          "start_time": "2026-05-21T19:27:00+03:00",
+          "end_time": "2026-05-21T21:02:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 105,
+          "name_for_reservation": "Дмитрий П.",
+          "num_people": 2,
+          "phone_number": "+7 913 100-10-20",
+          "status": "Открыт",
+          "seating_time": "2026-05-24T17:00:00+03:00",
+          "end_time": "2026-05-24T18:30:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "8191422c-8191-4191-a9142-8191422c8191",
+      "number": "5",
+      "capacity": 4,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "5c5581d4-5c55-4c55-a5581-5c5581d45c55",
+          "status": "New",
+          "start_time": "2026-05-23T13:12:00+03:00",
+          "end_time": "2026-05-23T13:57:00+03:00"
+        },
+        {
+          "id": "b8ab03a8-b8ab-48ab-aab03-b8ab03a8b8ab",
+          "status": "New",
+          "start_time": "2026-05-25T18:32:00+03:00",
+          "end_time": "2026-05-25T19:17:00+03:00"
+        }
+      ],
+      "reservations": []
+    },
+    {
+      "id": "1fc8bbdd-1fc8-4fc8-ac8bb-1fc8bbdd1fc8",
+      "number": "6",
+      "capacity": 4,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "daa66d13-daa6-4aa6-aa66d-daa66d13daa6",
+          "status": "Banquet",
+          "start_time": "2026-05-21T13:47:00+03:00",
+          "end_time": "2026-05-21T15:47:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 106,
+          "name_for_reservation": "Мария П.",
+          "num_people": 3,
+          "phone_number": "+7 915 100-10-20",
+          "status": "Живая очередь",
+          "seating_time": "2026-05-21T17:00:00+03:00",
+          "end_time": "2026-05-21T18:30:00+03:00"
+        },
+        {
+          "id": 107,
+          "name_for_reservation": "Алексей С.",
+          "num_people": 4,
+          "phone_number": "+7 915 101-15-21",
+          "status": "Новая",
+          "seating_time": "2026-05-21T18:15:00+03:00",
+          "end_time": "2026-05-21T20:15:00+03:00"
+        },
+        {
+          "id": 108,
+          "name_for_reservation": "Светлана К.",
+          "num_people": 4,
+          "phone_number": "+7 915 102-20-22",
+          "status": "Заявка",
+          "seating_time": "2026-05-21T19:30:00+03:00",
+          "end_time": "2026-05-21T22:00:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "be00358e-be00-4e00-a0035-be00358ebe00",
+      "number": "7",
+      "capacity": 2,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "fa8cfb85-fa8c-4a8c-a8cfb-fa8cfb85fa8c",
+          "status": "Bill",
+          "start_time": "2026-05-23T18:32:00+03:00",
+          "end_time": "2026-05-23T19:42:00+03:00"
+        },
+        {
+          "id": "56e27d59-56e2-46e2-ae27d-56e27d5956e2",
+          "status": "Bill",
+          "start_time": "2026-05-25T12:52:00+03:00",
+          "end_time": "2026-05-25T14:02:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 109,
+          "name_for_reservation": "Алексей П.",
+          "num_people": 2,
+          "phone_number": "+7 916 100-10-20",
+          "status": "Новая",
+          "seating_time": "2026-05-22T17:00:00+03:00",
+          "end_time": "2026-05-22T18:30:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "5c37af3f-5c37-4c37-a37af-5c37af3f5c37",
+      "number": "8",
+      "capacity": 4,
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "78dde6c4-78dd-48dd-adde6-78dde6c478dd",
+          "status": "New",
+          "start_time": "2026-05-21T18:07:00+03:00",
+          "end_time": "2026-05-21T18:52:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 110,
+          "name_for_reservation": "Светлана П.",
+          "num_people": 4,
+          "phone_number": "+7 917 100-10-20",
+          "status": "Заявка",
+          "seating_time": "2026-05-23T17:00:00+03:00",
+          "end_time": "2026-05-23T18:30:00+03:00"
+        },
+        {
+          "id": 111,
+          "name_for_reservation": "Павел С.",
+          "num_people": 2,
+          "phone_number": "+7 917 101-17-21",
+          "status": "Открыт",
+          "seating_time": "2026-05-23T18:15:00+03:00",
+          "end_time": "2026-05-23T20:15:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "fa6f28f0-fa6f-4a6f-a6f28-fa6f28f0fa6f",
+      "number": "9",
+      "capacity": 4,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "f1bbcd88-f1bb-41bb-abbcd-f1bbcd88f1bb",
+          "status": "New",
+          "start_time": "2026-05-22T13:56:00+03:00",
+          "end_time": "2026-05-22T14:41:00+03:00"
+        },
+        {
+          "id": "98c47536-98c4-48c4-ac475-98c4753698c4",
+          "status": "Closed",
+          "start_time": "2026-05-23T12:52:00+03:00",
+          "end_time": "2026-05-23T14:27:00+03:00"
+        },
+        {
+          "id": "4e114f5c-4e11-4e11-a114f-4e114f5c4e11",
+          "status": "New",
+          "start_time": "2026-05-24T18:16:00+03:00",
+          "end_time": "2026-05-24T19:01:00+03:00"
+        },
+        {
+          "id": "f519f70a-f519-4519-a19f7-f519f70af519",
+          "status": "Closed",
+          "start_time": "2026-05-25T17:12:00+03:00",
+          "end_time": "2026-05-25T18:47:00+03:00"
+        }
+      ],
+      "reservations": []
+    },
+    {
+      "id": "98a6a2a1-98a6-48a6-aa6a2-98a6a2a198a6",
+      "number": "10",
+      "capacity": 6,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "17156075-1715-4715-a1560-171560751715",
+          "status": "Bill",
+          "start_time": "2026-05-21T12:27:00+03:00",
+          "end_time": "2026-05-21T13:37:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 112,
+          "name_for_reservation": "Наталья П.",
+          "num_people": 5,
+          "phone_number": "+7 919 100-10-20",
+          "status": "Закрыт",
+          "seating_time": "2026-05-25T17:00:00+03:00",
+          "end_time": "2026-05-25T18:30:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "36de1c52-36de-46de-ade1c-36de1c5236de",
+      "number": "11",
+      "capacity": 8,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "8ff34739-8ff3-4ff3-af347-8ff347398ff3",
+          "status": "Bill",
+          "start_time": "2026-05-22T18:16:00+03:00",
+          "end_time": "2026-05-22T19:26:00+03:00"
+        },
+        {
+          "id": "36fbeee7-36fb-46fb-afbee-36fbeee736fb",
+          "status": "Banquet",
+          "start_time": "2026-05-23T17:12:00+03:00",
+          "end_time": "2026-05-23T19:12:00+03:00"
+        },
+        {
+          "id": "ec48c90d-ec48-4c48-a48c9-ec48c90dec48",
+          "status": "Bill",
+          "start_time": "2026-05-24T12:36:00+03:00",
+          "end_time": "2026-05-24T13:46:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 113,
+          "name_for_reservation": "Сергей П.",
+          "num_people": 4,
+          "phone_number": "+7 920 100-10-20",
+          "status": "Живая очередь",
+          "seating_time": "2026-05-21T17:00:00+03:00",
+          "end_time": "2026-05-21T18:30:00+03:00"
+        },
+        {
+          "id": 114,
+          "name_for_reservation": "Юлия С.",
+          "num_people": 5,
+          "phone_number": "+7 920 101-20-21",
+          "status": "Новая",
+          "seating_time": "2026-05-21T18:15:00+03:00",
+          "end_time": "2026-05-21T20:15:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "d5159603-d515-4515-a1596-d5159603d515",
+      "number": "12",
+      "capacity": 4,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "b54cda26-b54c-454c-a4cda-b54cda26b54c",
+          "status": "Closed",
+          "start_time": "2026-05-21T17:47:00+03:00",
+          "end_time": "2026-05-21T19:22:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 115,
+          "name_for_reservation": "Юлия П.",
+          "num_people": 4,
+          "phone_number": "+7 921 100-10-20",
+          "status": "Новая",
+          "seating_time": "2026-05-22T17:00:00+03:00",
+          "end_time": "2026-05-22T18:30:00+03:00"
+        },
+        {
+          "id": 116,
+          "name_for_reservation": "Андрей С.",
+          "num_people": 2,
+          "phone_number": "+7 921 101-21-21",
+          "status": "Заявка",
+          "seating_time": "2026-05-22T18:15:00+03:00",
+          "end_time": "2026-05-22T20:15:00+03:00"
+        },
+        {
+          "id": 117,
+          "name_for_reservation": "Екатерина К.",
+          "num_people": 3,
+          "phone_number": "+7 921 102-32-22",
+          "status": "Открыт",
+          "seating_time": "2026-05-22T19:30:00+03:00",
+          "end_time": "2026-05-22T22:00:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "734d0fb4-734d-434d-a4d0f-734d0fb4734d",
+      "number": "13",
+      "capacity": 6,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "2e2ac0ea-2e2a-4e2a-a2ac0-2e2ac0ea2e2a",
+          "status": "Closed",
+          "start_time": "2026-05-22T12:36:00+03:00",
+          "end_time": "2026-05-22T14:11:00+03:00"
+        },
+        {
+          "id": "d5336898-d533-4533-a3368-d5336898d533",
+          "status": "New",
+          "start_time": "2026-05-23T11:32:00+03:00",
+          "end_time": "2026-05-23T12:17:00+03:00"
+        },
+        {
+          "id": "8a8042be-8a80-4a80-a8042-8a8042be8a80",
+          "status": "Closed",
+          "start_time": "2026-05-24T17:56:00+03:00",
+          "end_time": "2026-05-24T19:31:00+03:00"
+        }
+      ],
+      "reservations": []
+    },
+    {
+      "id": "11848965-1184-4184-a8489-118489651184",
+      "number": "14",
+      "capacity": 8,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "538453d7-5384-4384-a8453-538453d75384",
+          "status": "Banquet",
+          "start_time": "2026-05-21T11:07:00+03:00",
+          "end_time": "2026-05-21T13:07:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 118,
+          "name_for_reservation": "Екатерина П.",
+          "num_people": 7,
+          "phone_number": "+7 923 100-10-20",
+          "status": "Открыт",
+          "seating_time": "2026-05-24T17:00:00+03:00",
+          "end_time": "2026-05-24T18:30:00+03:00"
+        },
+        {
+          "id": 119,
+          "name_for_reservation": "Михаил С.",
+          "num_people": 8,
+          "phone_number": "+7 923 101-23-21",
+          "status": "Закрыт",
+          "seating_time": "2026-05-24T18:15:00+03:00",
+          "end_time": "2026-05-24T20:15:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "afbc0316-afbc-4fbc-abc03-afbc0316afbc",
+      "number": "15",
+      "capacity": 4,
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "cc623a9b-cc62-4c62-a623a-cc623a9bcc62",
+          "status": "Banquet",
+          "start_time": "2026-05-22T17:56:00+03:00",
+          "end_time": "2026-05-22T19:56:00+03:00"
+        },
+        {
+          "id": "736ae249-736a-436a-a6ae2-736ae249736a",
+          "status": "Bill",
+          "start_time": "2026-05-23T16:52:00+03:00",
+          "end_time": "2026-05-23T18:02:00+03:00"
+        },
+        {
+          "id": "28b7bc6f-28b7-48b7-ab7bc-28b7bc6f28b7",
+          "status": "Banquet",
+          "start_time": "2026-05-24T11:16:00+03:00",
+          "end_time": "2026-05-24T13:16:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 120,
+          "name_for_reservation": "Михаил П.",
+          "num_people": 4,
+          "phone_number": "+7 924 100-10-20",
+          "status": "Закрыт",
+          "seating_time": "2026-05-25T17:00:00+03:00",
+          "end_time": "2026-05-25T18:30:00+03:00"
+        },
+        {
+          "id": 121,
+          "name_for_reservation": "Алина С.",
+          "num_people": 4,
+          "phone_number": "+7 924 101-24-21",
+          "status": "Живая очередь",
+          "seating_time": "2026-05-25T18:15:00+03:00",
+          "end_time": "2026-05-25T20:15:00+03:00"
+        },
+        {
+          "id": 122,
+          "name_for_reservation": "Виктор К.",
+          "num_people": 2,
+          "phone_number": "+7 924 102-38-22",
+          "status": "Новая",
+          "seating_time": "2026-05-25T19:30:00+03:00",
+          "end_time": "2026-05-25T22:00:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "4df37cc7-4df3-4df3-af37c-4df37cc74df3",
+      "number": "16",
+      "capacity": 6,
+      "zone": "2 этаж",
+      "orders": [],
+      "reservations": [
+        {
+          "id": 123,
+          "name_for_reservation": "Алина П.",
+          "num_people": 5,
+          "phone_number": "+7 925 100-10-20",
+          "status": "Живая очередь",
+          "seating_time": "2026-05-21T17:00:00+03:00",
+          "end_time": "2026-05-21T18:30:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "ec2af678-ec2a-4c2a-a2af6-ec2af678ec2a",
+      "number": "17",
+      "capacity": 8,
+      "zone": "Банкетный зал",
+      "orders": [
+        {
+          "id": "6a99b44c-6a99-4a99-a99b4-6a99b44c6a99",
+          "status": "New",
+          "start_time": "2026-05-22T11:16:00+03:00",
+          "end_time": "2026-05-22T12:01:00+03:00"
+        },
+        {
+          "id": "e3779b10-e377-4377-a779b-e3779b10e377",
+          "status": "New",
+          "start_time": "2026-05-23T15:52:00+03:00",
+          "end_time": "2026-05-23T16:37:00+03:00"
+        },
+        {
+          "id": "11a25bfa-11a2-41a2-aa25b-11a25bfa11a2",
+          "status": "Closed",
+          "start_time": "2026-05-23T21:12:00+03:00",
+          "end_time": "2026-05-23T22:47:00+03:00"
+        },
+        {
+          "id": "c6ef3620-c6ef-46ef-aef36-c6ef3620c6ef",
+          "status": "New",
+          "start_time": "2026-05-24T16:36:00+03:00",
+          "end_time": "2026-05-24T17:21:00+03:00"
+        },
+        {
+          "id": "3fcd1ce4-3fcd-4fcd-acd1c-3fcd1ce43fcd",
+          "status": "New",
+          "start_time": "2026-05-25T20:12:00+03:00",
+          "end_time": "2026-05-25T20:57:00+03:00"
+        }
+      ],
+      "reservations": []
+    },
+    {
+      "id": "8a627029-8a62-4a62-a6270-8a6270298a62",
+      "number": "18",
+      "capacity": 10,
+      "zone": "Банкетный зал",
+      "orders": [],
+      "reservations": [
+        {
+          "id": 124,
+          "name_for_reservation": "Татьяна П.",
+          "num_people": 9,
+          "phone_number": "+7 927 100-10-20",
+          "status": "Заявка",
+          "seating_time": "2026-05-23T17:00:00+03:00",
+          "end_time": "2026-05-23T18:30:00+03:00"
+        },
+        {
+          "id": 125,
+          "name_for_reservation": "Кирилл С.",
+          "num_people": 10,
+          "phone_number": "+7 927 101-27-21",
+          "status": "Открыт",
+          "seating_time": "2026-05-23T18:15:00+03:00",
+          "end_time": "2026-05-23T20:15:00+03:00"
+        },
+        {
+          "id": 126,
+          "name_for_reservation": "Полина К.",
+          "num_people": 10,
+          "phone_number": "+7 927 102-44-22",
+          "status": "Закрыт",
+          "seating_time": "2026-05-23T19:30:00+03:00",
+          "end_time": "2026-05-23T22:00:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "2899e9da-2899-4899-a99e9-2899e9da2899",
+      "number": "19",
+      "capacity": 12,
+      "zone": "Банкетный зал",
+      "orders": [
+        {
+          "id": "08d12dfd-08d1-48d1-ad12d-08d12dfd08d1",
+          "status": "Bill",
+          "start_time": "2026-05-22T16:36:00+03:00",
+          "end_time": "2026-05-22T17:46:00+03:00"
+        },
+        {
+          "id": "81af14c1-81af-41af-aaf14-81af14c181af",
+          "status": "Bill",
+          "start_time": "2026-05-23T20:12:00+03:00",
+          "end_time": "2026-05-23T21:22:00+03:00"
+        },
+        {
+          "id": "afd9d5ab-afd9-4fd9-ad9d5-afd9d5abafd9",
+          "status": "Banquet",
+          "start_time": "2026-05-23T15:32:00+03:00",
+          "end_time": "2026-05-23T17:32:00+03:00"
+        },
+        {
+          "id": "6526afd1-6526-4526-a26af-6526afd16526",
+          "status": "Bill",
+          "start_time": "2026-05-24T21:56:00+03:00",
+          "end_time": "2026-05-24T23:06:00+03:00"
+        },
+        {
+          "id": "de049695-de04-4e04-a0496-de049695de04",
+          "status": "Bill",
+          "start_time": "2026-05-25T14:32:00+03:00",
+          "end_time": "2026-05-25T15:42:00+03:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 127,
+          "name_for_reservation": "Кирилл П.",
+          "num_people": 8,
+          "phone_number": "+7 928 100-10-20",
+          "status": "Открыт",
+          "seating_time": "2026-05-24T17:00:00+03:00",
+          "end_time": "2026-05-24T18:30:00+03:00"
+        }
+      ]
+    },
+    {
+      "id": "c6d1638b-c6d1-46d1-ad163-c6d1638bc6d1",
+      "number": "20",
+      "capacity": 14,
+      "zone": "Банкетный зал",
+      "orders": [],
+      "reservations": [
+        {
+          "id": 128,
+          "name_for_reservation": "Полина П.",
+          "num_people": 7,
+          "phone_number": "+7 929 100-10-20",
+          "status": "Закрыт",
+          "seating_time": "2026-05-25T17:00:00+03:00",
+          "end_time": "2026-05-25T18:30:00+03:00"
+        },
+        {
+          "id": 129,
+          "name_for_reservation": "Анна С.",
+          "num_people": 8,
+          "phone_number": "+7 929 101-29-21",
+          "status": "Живая очередь",
+          "seating_time": "2026-05-25T18:15:00+03:00",
+          "end_time": "2026-05-25T20:15:00+03:00"
+        }
+      ]
+    }
+  ]
+}
