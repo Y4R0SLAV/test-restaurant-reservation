@@ -17,5 +17,5 @@ export default defineConfig({
       },
     },
   },
-  base: '/Y4R0SLAV.github.io',
+  base: '/test-deploy',
 })
