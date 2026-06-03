@@ -1,7 +1,13 @@
-import { apiRequest } from './client'
 import type { BookingResponse } from '@/types'
 
-/** GET /api/booking — booking data for the test task */
-export function getBooking() {
-  return apiRequest<BookingResponse>('/api/booking')
+// Хардкодим данные локально: без хоста/сервера, только статический JSON.
+// Vite умеет импортировать JSON как модуль.
+import bookingJson from '../../server/data/booking.json'
+
+const booking = bookingJson as BookingResponse
+
+/** Локальное получение данных booking.json */
+export async function getBooking(): Promise<BookingResponse> {
+  return booking
 }
+

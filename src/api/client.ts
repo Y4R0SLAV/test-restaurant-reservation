@@ -1,6 +1,8 @@
 import type { ApiError } from '@/types'
 
+// baseUrl больше не используется: запросы к серверу отключены.
 const baseUrl = import.meta.env.VITE_API_BASE_URL ?? ''
+
 
 export class ApiRequestError extends Error implements ApiError {
   readonly status: number
