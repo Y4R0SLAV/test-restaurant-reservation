@@ -1,13 +1,16 @@
 <script setup lang="ts">
-import StatusBadge from '@/components/ui/StatusBadge.vue'
 import { RESERVATION_STATUS } from '@/constants/status'
 import type { Reservation } from '@/types'
-import { formatTime, parseApiDateTime } from '@/utils/datetime'
+import TimelineReservationGuest from './TimelineReservationGuest.vue'
+import TimelineEventBlock from './TimelineEventBlock.vue'
 
 const props = defineProps<{
   reservation: Reservation
   topPercent: number
   heightPercent: number
+  colIndex: number
+  colCount: number
+  overlapOffsetPx: number
 }>()
 
 const style =
@@ -16,57 +19,45 @@ const style =
     bg: '#e5e7eb',
     text: '#374151',
   }
-const timeLabel = `${formatTime(parseApiDateTime(props.reservation.seating_time))} — ${formatTime(parseApiDateTime(props.reservation.end_time))}`
 </script>
 
 <template>
-  <div
-    class="timeline-block timeline-block--reservation"
-    :style="{
-      top: `${topPercent}%`,
-      height: `${heightPercent}%`,
-      '--block-bg': style.bg,
-      '--block-text': style.text,
+  <TimelineEventBlock
+    kind="reservation"
+    :event="reservation"
+    :top-percent="topPercent"
+    :height-percent="heightPercent"
+    :col-index="colIndex"
+    :col-count="colCount"
+    :overlap-offset-px="overlapOffsetPx"
+    :badge="{
+      label: style.label,
+      bg: style.bg,
+      text: style.text,
+      borderColor: style.borderColor,
+    }"
+    :time="{
+      start: reservation.seating_time,
+      end: reservation.end_time,
     }"
     :title="`${reservation.name_for_reservation}, ${reservation.num_people} гостей`"
   >
-    <StatusBadge :label="style.label" :bg="style.bg" :text="style.text" />
-    <span class="timeline-block__guest">{{ reservation.name_for_reservation }}</span>
-    <span class="timeline-block__meta">
-      {{ reservation.num_people }} г. · {{ timeLabel }}
-    </span>
-  </div>
+    <template #beforeBadge>
+      <TimelineReservationGuest
+        :name="reservation.name_for_reservation"
+        :num-people="reservation.num_people"
+      />
+    </template>
+    <template #afterBadge>
+      <span class="timeline-reservation-block__phone-number">
+        <img src="/phone.svg" alt="Номер" width="8" height="8" /> {{ reservation.phone_number }}
+      </span>
+    </template>
+  </TimelineEventBlock>
 </template>
 
-<style scoped>
-.timeline-block {
-  position: absolute;
-  z-index: 2;
-  left: 0.25rem;
-  right: 0.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.125rem;
-  padding: 0.375rem 0.5rem;
-  border-radius: 6px;
-  background: var(--block-bg);
-  color: var(--block-text);
-  font-size: 0.6875rem;
-  overflow: hidden;
-  min-height: 2.75rem;
-  box-sizing: border-box;
-}
-
-.timeline-block__guest {
-  font-weight: 600;
-  line-height: 1.2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.timeline-block__meta {
-  opacity: 0.85;
-  line-height: 1.2;
+<style lang="css" scoped>
+.timeline-reservation-block__phone-number {
+  text-wrap: nowrap;
 }
 </style>

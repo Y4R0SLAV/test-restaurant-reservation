@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TabBar from '@/components/ui/TabBar.vue'
-import { formatDayLabel } from '@/utils/datetime'
+import { formatDayLabel, formatDayNumber } from '@/utils/datetime'
 
 const selectedDay = defineModel<string[]>({ required: true })
 
@@ -12,6 +12,6 @@ defineProps<{ days: string[] }>()
   <TabBar
     v-model="selectedDay"
     label="Дата"
-    :items="days.map((d) => ({ value: d, label: formatDayLabel(d) }))"
+    :items="days.map((d) => ({ value: d, label: formatDayLabel(d), day: formatDayNumber(d) }))"
   />
 </template>

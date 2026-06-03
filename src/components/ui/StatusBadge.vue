@@ -1,15 +1,15 @@
 <script setup lang="ts">
 defineProps<{
   label: string
-  bg: string
-  text: string
+  bg?: string
+  text?: string
 }>()
 </script>
 
 <template>
   <span
     class="status-badge"
-    :style="{ backgroundColor: bg, color: text }"
+    :style="{ backgroundColor: bg || 'transparent', color: text || 'white' }"
   >
     {{ label }}
   </span>
@@ -17,13 +17,26 @@ defineProps<{
 
 <style scoped>
 .status-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.125rem 0.5rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  display: inline-block;
+  flex: 0 0 auto;
+  max-width: 100%;
+
+  width: max-content;
+  min-width: max-content;
+
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 8px;
+  font-weight: 600;
   line-height: 1.25;
+
+  /* чтобы badge не пропадал при нехватке места */
   white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+
+  /* на случай, если родитель использует flex/overflow */
+  position: relative;
+  z-index: 10;
 }
 </style>

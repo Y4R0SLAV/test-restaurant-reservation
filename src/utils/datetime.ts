@@ -46,9 +46,28 @@ export function formatTime(date: Date): string {
 }
 
 export function formatDayLabel(isoDate: string): string {
+  // Разбираем ISO-дату (YYYY-MM-DD) в локальную временную зону
+  const [year, month, day] = isoDate.split('-').map(Number)
+  const date = new Date(year, month - 1, day)
+
+  // Сегодняшняя дата в локальной зоне (полночь)
+  const today = new Date()
+  const todayDate = new Date(today.getFullYear(), today.getMonth(), today.getDate())
+
+  // Разница в днях
+  const diffDays = Math.round((date.getTime() - todayDate.getTime()) / (1000 * 60 * 60 * 24))
+
+  if (diffDays === 0) return 'сегодня'
+  if (diffDays === -1) return 'вчера'
+  if (diffDays === 1) return 'завтра'
+
+  // Полное название дня недели
+  return date.toLocaleDateString('ru-RU', { weekday: 'long' })
+}
+
+export function formatDayNumber(isoDate: string): string {
   const date = new Date(`${isoDate}T12:00:00`)
   return date.toLocaleDateString('ru-RU', {
-    weekday: 'short',
     day: 'numeric',
     month: 'short',
   })

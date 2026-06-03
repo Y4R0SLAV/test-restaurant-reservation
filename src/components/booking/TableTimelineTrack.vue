@@ -76,13 +76,20 @@ const hourSlots = computed(() =>
         :order="layout.event.data"
         :top-percent="layout.topPercent"
         :height-percent="layout.heightPercent"
+        :col-index="layout.colIndex"
+        :col-count="layout.colCount"
+        :overlap-offset-px="layout.overlapOffsetPx"
       />
       <TimelineReservationBlock
         v-else
         :reservation="layout.event.data"
         :top-percent="layout.topPercent"
         :height-percent="layout.heightPercent"
+        :col-index="layout.colIndex"
+        :col-count="layout.colCount"
+        :overlap-offset-px="layout.overlapOffsetPx"
       />
+
     </template>
   </div>
 </template>

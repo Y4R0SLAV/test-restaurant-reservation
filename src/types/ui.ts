@@ -9,7 +9,14 @@ export interface TimelineEventLayout {
   event: TimelineEvent
   topPercent: number
   heightPercent: number
+  /** Колонка в группе наложений. */
+  colIndex: number
+  /** Количество колонок в группе наложений. */
+  colCount: number
+  /** Если событие наложилось на другое — дополнительный горизонтальный отступ (px). */
+  overlapOffsetPx: number
 }
+
 
 export interface TimeSlot {
   label: string

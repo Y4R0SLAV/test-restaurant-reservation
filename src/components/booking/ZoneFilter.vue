@@ -16,5 +16,6 @@ defineProps<{
     label="Отображаемые зоны"
     :items="zones.map((z) => ({ value: z, label: z }))"
     :multiple="true"
+    :min-selected="1"
   />
 </template>
